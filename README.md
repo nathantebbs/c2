@@ -1,10 +1,10 @@
 # C2 Simulator (Lab)
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
 A secure command-and-control simulator for controlled Linux lab environments, demonstrating authenticated client/server communication, structured messaging, replay-safe request handling, and service-style operation.
 
 **Purpose**: Educational and reliability testing for secure service operations (not offensive tooling).
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Features
 
