@@ -1,0 +1,40 @@
+[Unit]
+Description=C2 Server - Command and Control Simulator
+After=network.target
+Documentation=https://github.com/your-org/c2-simulator
+
+[Service]
+Type=simple
+User=c2server
+Group=c2server
+
+# Working directory
+WorkingDirectory=/opt/c2
+
+# Binary location
+ExecStart=/opt/c2/bin/c2-server
+
+# Restart configuration
+Restart=on-failure
+RestartSec=5s
+StartLimitInterval=300
+StartLimitBurst=5
+
+# Security hardening
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/var/log/c2
+
+# Resource limits
+LimitNOFILE=65536
+TasksMax=512
+
+# Logging
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=c2-server
+
+[Install]
+WantedBy=multi-user.target

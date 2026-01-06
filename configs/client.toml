@@ -1,0 +1,13 @@
+[client]
+client_id = "client-1"
+relay_addr = "127.0.0.1"
+relay_port = 4000
+
+[security]
+# IMPORTANT: Must match the server's PSK
+psk = "0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+
+[timeouts]
+connect_timeout_secs = 10
+read_timeout_secs = 30
+write_timeout_secs = 30

@@ -1,0 +1,27 @@
+[server]
+listen_addr = "127.0.0.1"
+listen_port = 5000
+
+[security]
+# IMPORTANT: Change this in production! Use a strong, random hex string.
+psk = "0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+
+# Optional: restrict to specific client IDs (empty = allow all)
+allowed_client_ids = []
+
+# Timestamp skew tolerance (seconds)
+timestamp_skew_secs = 120
+
+# How long to remember nonces for replay protection (seconds)
+nonce_ttl_secs = 300
+
+[limits]
+max_conns = 100
+max_frame_bytes = 1048576  # 1MB
+read_timeout_secs = 30
+write_timeout_secs = 30
+auth_timeout_secs = 60
+
+[logging]
+log_level = "info"  # trace, debug, info, warn, error
+json_logs = false   # Set to true for structured JSON logs

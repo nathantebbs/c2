@@ -1,0 +1,68 @@
+# Rust
+target/
+Cargo.lock
+
+# Build artifacts
+*.o
+*.so
+*.dylib
+*.dll
+*.a
+*.lib
+*.exe
+
+# Rust debug/release builds
+debug/
+release/
+
+# Dependency directories
+node_modules/
+
+# IDE and editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+*.iml
+.project
+.classpath
+.settings/
+
+# Logs
+*.log
+logs/
+
+# Environment and configuration
+.env
+.env.local
+*.local
+secrets/
+*.key
+*.pem
+*.crt
+*.p12
+
+# Test coverage
+coverage/
+*.profdata
+*.profraw
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Backup files
+*.bak
+*.backup
+*~
+
+# Deployment artifacts
+deployments/*.deployed
